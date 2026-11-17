@@ -2,6 +2,10 @@
 
 **LumIA** é uma aplicação web de **IA generativa com RAG** (*Retrieval-Augmented Generation*). Você envia um PDF, como um contrato, uma apostila ou um manual, e faz perguntas em linguagem natural. A IA responde usando **apenas o conteúdo do documento** e mostra **de onde tirou cada informação**, com o documento, a página e o trecho original.
 
+🔗 **Demo online:** [lumia-njq6.onrender.com](https://lumia-njq6.onrender.com). Teste na hora com o manual de exemplo ou envie um PDF seu.
+
+> A demo usa o plano gratuito do Render: depois de um tempo sem visitas, a primeira abertura pode levar cerca de 1 minuto.
+
 ![Conversa](screenshots/conversa.png)
 
 | Tela inicial | Trecho de origem | Celular (tema escuro) |
@@ -101,7 +105,7 @@ Acesse **http://127.0.0.1:5000**.
 
 - **Build:** `pip install -r requirements.txt`
 - **Start:** `gunicorn app:app --timeout 120`
-- **Variáveis:** `GEMINI_API_KEY`, `SECRET_KEY`
+- **Variáveis:** `GEMINI_API_KEY`, `SECRET_KEY` e, opcionalmente, `USO_TOTAL_POR_DIA` para limitar o uso da demo
 
 ## 🔒 Privacidade
 
